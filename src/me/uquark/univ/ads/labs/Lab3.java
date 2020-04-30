@@ -4,13 +4,13 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Lab3 {
-    private static class Abiturient implements Comparable<Abiturient> {
+    public static class Abiturient implements Comparable<Abiturient> {
         @Override
         public int compareTo(Abiturient abiturient) {
             return Float.compare(getScore(), abiturient.getScore());
         }
 
-        public static enum Gender {
+        public enum Gender {
             Male,
             Female,
             Other
