@@ -19,7 +19,7 @@ public class Task1 {
             boolean compare(K object);
         }
 
-        Element<T> begin = null, end = null;
+        public Element<T> begin = null, end = null;
 
         public void addToEnd(T object) {
             if (begin == null || end == null) {
@@ -73,11 +73,11 @@ public class Task1 {
             return null;
         }
 
-        public void printAll() {
+        public void printAll(String separator) {
             Element<T> current = begin;
             while (current != null) {
                 current.object.print();
-                System.out.println();
+                System.out.print(separator);
                 current = current.next;
             }
         }
@@ -101,11 +101,11 @@ public class Task1 {
         }
 
         @Override
-        public void printAll() {
+        public void printAll(String separator) {
             Element<T> current = begin;
             while (current != null) {
                 current.object.print();
-                System.out.println();
+                System.out.print(separator);
                 current = current.next;
                 if (current == begin)
                     break;
