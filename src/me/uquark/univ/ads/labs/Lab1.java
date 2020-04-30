@@ -13,13 +13,13 @@ public class Lab1 {
         public void run() {
             float v1, v2, s, t;
 
-            System.out.println("Скорость первого автомобиля: ");
+            System.out.print("Скорость первого автомобиля: ");
             v1 = scanner.nextFloat();
-            System.out.println("Скорость второго автомобиля: ");
+            System.out.print("Скорость второго автомобиля: ");
             v2 = scanner.nextFloat();
-            System.out.println("Расстояние между автомобилями: ");
+            System.out.print("Расстояние между автомобилями: ");
             s = scanner.nextFloat();
-            System.out.println("Время поездки: ");
+            System.out.print("Время поездки: ");
             t = scanner.nextFloat();
 
             System.out.printf("Автомобили будут удалены друг от друга на %.2f единиц\n", s + (v1 + v2) * t);
@@ -29,9 +29,9 @@ public class Lab1 {
     private static class FormulaProblem implements Problem {
         public void run() {
             float a, x;
-            System.out.println("Параметр a: ");
+            System.out.print("Параметр a: ");
             a = scanner.nextFloat();
-            System.out.println("Параметр x: ");
+            System.out.print("Параметр x: ");
             x = scanner.nextFloat();
 
             float cos = (float) Math.cos(a * x);
@@ -43,10 +43,10 @@ public class Lab1 {
     private static class KnightProblem implements Problem {
         public void run() {
             int x1, y1, x2, y2;
-            System.out.println("Координаты коня: ");
+            System.out.print("Координаты коня: ");
             x1 = scanner.nextInt();
             y1 = scanner.nextInt();
-            System.out.println("Координаты назначения: ");
+            System.out.print("Координаты назначения: ");
             x2 = scanner.nextInt();
             y2 = scanner.nextInt();
 
